@@ -5,8 +5,6 @@
 
 int main(int argc, char *argv[])
 {
-
-    printf ("foobar. Hello World.");
 	int elementCount;
     if (argc == 2)
     {
