@@ -5,3 +5,7 @@ all: $(OBJ)
 	
 %.o: %.c
 	gcc -c $<
+	
+.PHONY: clean
+clean:
+	rm -rf *.o
