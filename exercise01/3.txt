@@ -1,0 +1,1 @@
+Meine Heimkarte ist nicht CUDA fähig. Ist ein Mobile Intel(R) 4 Series Express Chipset.

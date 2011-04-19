@@ -1,0 +1,13 @@
+1.) Download und Install von CUDA Computing SDK
+2.) Make ausführen
+3.) das Programm Device Query ausgeführt
+
+
+
+Auf mpc711.mata.uni-jena.de gibt es 1 CUDA Device: "Tesla C2050", 14 Multiprozessoren, 2817720320 Bytes globaler Speicher, compute capability: 2.0
+
+
+
+
+  
+  
