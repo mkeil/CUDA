@@ -1,0 +1,5 @@
+Gründe warum ein Kernel fehlschlagen könnte
+
+- die Dimensionen die beim Aufruf verwendet werden sind zu groß
+- der Kernel verwendet eine Funktion die vom Device nicht unterstützt wird
+- der Kernel verwendet zuviel Speicher 
