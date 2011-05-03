@@ -8,6 +8,7 @@
 #include "parser.h"
 #include "raytracer.h"
 #include "ppm_writer.h"
+#include "copyToDevice.h"
 
 static bool validateWidthAndHeight(const char* flagname, int value) {
    if (value > 0 && value < 32768)
@@ -40,7 +41,13 @@ int main(int argc, char **argv) {
      // parse scene
 	 
      scene s;
-     parse_scene(argv[1], s);
+     
+	parse_scene(argv[1], s);
+	 
+	#ifndef NO_CUDA
+		sToDevice (s);
+	#endif
+
 	 
 	 
      // this is our height and width
@@ -51,10 +58,11 @@ int main(int argc, char **argv) {
      rgb image[height][width];
 
      // render the scene
-     render_image(s, height, width, &image[0][0]);
+     
+	 render_image(s, height, width, &image[0][0]);
 
      // write image to filename
-      write_ppm(&image[0][0], width, height, argv[2]);
+     write_ppm(&image[0][0], width, height, argv[2]);
 
      return 0;
 }
