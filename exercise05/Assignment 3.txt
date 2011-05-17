@@ -1,0 +1,11 @@
+Assignment 3:
+Report for rt_gpu -height 400 -width 400 path/to/double-torus1.yaml double-torus1.ppm on mpc711 at 17.5.2011 
+
+global memory accesses *******
+globalLoad request: 253128
+globalStore requerst: 1032
+
+
+The occupancy of the kernel ist 0.333. 
+
+The kernel uses 63 registers per Thread.
