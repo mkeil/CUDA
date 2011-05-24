@@ -1,0 +1,9 @@
+Vergleich der verschiedenen Implementierungen 
+
+bei brauchen 63 Register pro Thread
+
+auch der globale Speicherzugriff ist gleich
+
+aber die Implementierung mit dem neuen Algorithmus ist um das 4 fache schneller. 
+
+Hinweis: Ich habe nur die 1. Aufgabe bearbeitet!

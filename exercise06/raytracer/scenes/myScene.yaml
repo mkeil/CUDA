@@ -1,0 +1,46 @@
+# a simple scene
+
+# colors
+color: &red 
+   [255, 0, 0]
+color: &green
+   [0, 255, 0]
+color: &blue
+   [0, 0, 255]
+color: &white
+   [255, 255, 255]
+color: &orange
+   [255, 69, 0]
+
+# background
+background: *white
+
+# all primitives
+primitives:
+- triangle: [[0, 0, 0], [100, 0, 0], [100, 0, 100]]
+  color: *orange
+- triangle: [[0, 0, 0], [0, 0, 100], [100, 0, 100]]
+  color: *orange
+- triangle: [[5, 0, 5], [8, 0, 5], [8, 5, 5]]
+  color: *blue
+- triangle: [[5, 0, 3], [8, 0, 5], [8, 5, 5]]
+  color: *blue
+- triangle: [[4, 2, 6], [8, 1, 6], [4, 3, 7]]
+  color: *red
+- triangle: [[4, 2, 6], [10, 1, 6], [4, 3, 3]]
+  color: *green
+- triangle: [[4, 4, 6], [10, 4, 6], [4, 5, 3]]
+  color: *orange
+
+# point lights
+lights:
+- [8.0, 9.0, 1.0]
+
+# camera
+camera:
+  location:           [5, 4, 0]
+  direction:          [0, 0, 1]
+  up:                 [0, 1, 0]
+  distance:           3
+  horizontal_angle:   80
+  vertical_angle:     100
